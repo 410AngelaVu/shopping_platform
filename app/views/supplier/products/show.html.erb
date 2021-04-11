@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<%= Product.all.each do |product| %>
+<p>
+  <strong>Name:</strong>
+  <%= product.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= product.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= product.price %>
+</p>
+<p>
+  <strong>Quantity:</strong>
+  <%= product.quantity %>
+</p>
+<p>
+<strong>Author:</strong>
+  <%= product.supplier.name %>
+</p>
+<% end %>
+<%= link_to 'Edit', edit_supplier_product_path(@product) %> |
+<%= link_to 'Back', supplier_products_path %>

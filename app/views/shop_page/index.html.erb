@@ -1,0 +1,8 @@
+<h1>Hi!</h1>
+
+<p>This is the list of suppliers:</p>
+<% User.all.each do |s| %>
+<% if s.is_supplier? %>
+<%= link_to s.name, s %> 
+<% end %>
+<% end %>

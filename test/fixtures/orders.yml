@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ordered_by: one
+  attended_order: one
+
+two:
+  ordered_by: two
+  attended_order: two
