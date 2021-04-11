@@ -1,0 +1,2 @@
+module ShopPageHelper
+end
